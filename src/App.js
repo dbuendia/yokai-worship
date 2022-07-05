@@ -1,13 +1,14 @@
-import logo from "../src/img/logo.svg";
 import "../src/styles/App.css";
-import YokaiCard from "./components/yokaiCard";
-import yokaiData from "./dataset/yokaiData";
+import Header from "./components/header";
+import Filters from "./components/filters";
+import YokaiCardsContainer from "./components/yokaiCardsContainer";
 
 function App() {
   return (
     <div className="App">
-      <img src={logo} className="App-logo" alt="logo" />
-      <YokaiCard yokaiDetails={yokaiData} />
+      <Header />
+      <Filters />
+      <YokaiCardsContainer />
     </div>
   );
 }
