@@ -5,7 +5,7 @@
 }
 
 /*
- Torn left edge banner
+ Torn left edge banner https://opdiv.com/2021/02/28/torn-edges-css/
 
  License: GPL 3.0
  License URL: https://www.gnu.org/licenses/gpl-3.0.en.html
@@ -188,7 +188,7 @@ body {
 .torn_container {
   float: left;
   clear: both;
-  margin-bottom: 1.2em;
+  margin-bottom: 1.1em;
   position: relative;
 }
 
@@ -267,16 +267,14 @@ body {
 }
 
 .App {
-  /* display: flex;
-  flex-wrap: wrap; */
-  font-family: sans-serif;
+  /* font-family: "Handlee"; */
+  font-family: 'Nothing You Could Do';
+  /* font-size: 1.3em; */
   text-align: center;
   background: whitesmoke;
   /* background-color: #fffef0; */
   background-color: #ede4cc;
-  background-image: url("https://www.transparenttextures.com/patterns/exclusive-paper.png");
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  background-image: url("../../public/img/paper.png")
 }
 
 .header {
@@ -289,9 +287,17 @@ body {
 .filters {
   background-color: rgb(71, 111, 243);
   width: 100%;
-  height: 70px;
+  height: fit-content;
+  padding: 20px;
 }
 
+.filters p {
+  margin-top: 20px;
+}
+
+.filters span {
+  margin: 0 15px;
+}
 .yokai-cards-container {
   display: flex;
   flex-wrap: wrap;
@@ -301,6 +307,7 @@ body {
 }
 
 .yokai-card {
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -320,10 +327,8 @@ body {
 }
 
 .kanji {
-  font-size: 3.2em;
-  /* font-family: "Potta One"; */
+  font-size: 60px; /* 3.2 em */
   font-family: "Yuji Boku";
-  /* Rampart One; */
 }
 
 .romaji {
@@ -332,12 +337,18 @@ body {
 
 .yokai-card img {
   width: 100%;
-  height: 250px;
+  /* height: 100%; */
   z-index: 100;
 }
 
+.yokai-card-description-container {
+  height: 200px;
+}
+
 .yokai-card-description {
-  /* border: 1px solid red; */
+  width: 300px;
   height: 200px;
   overflow-y: scroll;
+  z-index: 300;
+  position: absolute;
 }
