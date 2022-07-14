@@ -1,10 +1,12 @@
 /*
 
 Idealmente deberíamos ser capaz de filtrar el array de elementos en este componente,
-pero no podemos hacerlo porque vamos a instanciarlo en otro y los estados son locales a cada componente.
-Por ello, necesitamos hacer que los estados sean globales, llevando useState al elemento padre que contenga todos
-aquellos elementos que necesiten usar ese estado.
-Esta técnica se conoce como "subir el estado".
+pero no podemos hacerlo porque vamos a instanciarlo en otro (App.js) y los estados son locales a cada componente.
+Por ello, necesitamos hacer que los estados sean globales.
+
+Para ello aquí usamos una técnica que se conoce como "subir el estado",
+llevando el control de los mismos (useState) al elemento padre que contenga
+todos aquellos componentes que los vayan a necesitar.
 
 */
 
@@ -41,6 +43,7 @@ export default function Filters({
         id="1"
         onChange={handleTypeSelectChange}
         // Value es el valor seleccionado en el select, controlado por React
+        // Este valor lo cambiaremos a través de las funciones handle.
         value={type}
       >
         <option value="todos">Todos</option>
@@ -75,10 +78,6 @@ export default function Filters({
         <option value="mar">Mar</option>
         <option value="casa">Casa</option>
       </select>
-      <p>
-        Seleccionado <b>{type}</b> con apariencia <b>{appearence}</b> y habitat{" "}
-        <b>{habitat}</b>.
-      </p>
     </div>
   );
 }

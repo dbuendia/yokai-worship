@@ -13,7 +13,8 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      {/* <div className="app-wrapper"> */}
+      <Header type={type} appearence={appearence} habitat={habitat} />
       {/* Pasamos los estados y funciones que los gestionan como props */}
       <Filters
         type={type}
@@ -29,6 +30,7 @@ function App() {
         appearence={appearence}
         habitat={habitat}
       />
+      {/* </div> */}
     </div>
   );
 }
