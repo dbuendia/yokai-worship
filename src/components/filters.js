@@ -36,7 +36,7 @@ export default function Filters({
 
   return (
     <div className="filters">
-      <h1>Filters</h1>
+      <h1>Filtros</h1>
       <span>Tipo:</span>
       <select
         name="tipos"

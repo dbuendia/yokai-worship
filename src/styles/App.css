@@ -209,6 +209,7 @@ body {
 .torn_left > div:nth-child(2):before,
 .torn_right > div:nth-child(2):after {
   background-color: var(--torn-background-color);
+  background-image: url("../../public/img/paper.png");
 }
 .torn_container > div:nth-child(2),
 .torn_container > div:nth-child(2) {
@@ -219,7 +220,6 @@ body {
 .torn_left > div:nth-child(2):before {
   content: "";
   position: absolute;
-  /* right: calc(9px - var(--torn-right-width)); */
   left: calc(8px - var(--torn-left-width));
   top: 0px;
   width: calc(14px - var(--torn-left-width));
@@ -267,12 +267,11 @@ body {
 }
 
 .App {
-  /* font-family: "Handlee"; */
+  display: flex;
+  flex-direction: column;
+  height:100vh;
   font-family: 'Nothing You Could Do';
-  /* font-size: 1.3em; */
   text-align: center;
-  background: whitesmoke;
-  /* background-color: #fffef0; */
   background-color: #ede4cc;
   background-image: url("../../public/img/paper.png");
 }
@@ -280,12 +279,12 @@ body {
 .header {
   background-color: rgba(61, 147, 232, 0.279);
   background-color: rgba(61, 147, 232, 0.665);
+  background-color: rgba(188, 0, 45, 0.80);
+  background-color: rgba(188, 0, 45, 0.80);
   box-shadow: 0px 0px 1px #8a4d0f;
-  /* box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset; */
-  /* background-color: #ede4cc; */
   background-image: url("../../public/img/paper.png");
   width: 100%;
-  height: 200px;
+  height: 140px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -293,36 +292,47 @@ body {
 }
 
 .header-phrase {
-  margin-top: 25px;
+  margin-top: 5px;
   font-size: 1.5rem;
 }
 
 .filters {
-  /* background-color: rgba(61, 147, 232, 0.665); */
-  background-color: rgba(61, 147, 232, 0.279);
   background-color: rgba(147, 61, 232, 0.279);
+  background-color: rgba(188, 0, 45, 0.80);
+  background-color: rgba(218,165,32, 0.80);
+  background-color: rgba(207,181,59, 0.8);
+  background-color: rgba(104, 195, 163, 0.6);
+  border: 1px solid rgba(218,165,32, 0.20);
   box-shadow: 0px 0px 1px #8a4d0f;
   background-image: url("../../public/img/paper.png");
   width: 100%;
-  height: fit-content;
-  padding: 20px;
+  height: 80px;
+  padding: 10px;
 }
 
 .filters p {
-  margin-top: 20px;
+  margin: 10px;
 }
 
 .filters span {
   margin: 0 15px;
 }
 
+.filters h1 {
+  font-size: 1.5rem;
+}
+
 .yokai-cards-container {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
+  flex: 1;
+  overflow-y: auto;
   justify-content: space-around;
-  box-shadow: 0 -10px 60px #8a4d0f inset;
+  box-shadow: 0 -5px 60px #8a4d0f inset;
+  background-image: url("../../public/img/paper.png");
   padding: 30px;
+  background-color: #ede4cc;
 }
 
 .yokai-card {
@@ -333,12 +343,6 @@ body {
   height: 800px;
   margin: 30px;
   padding: 50px;
-  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
-  /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px; */
-  /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
-  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
-  /* box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset; */
-  /* background: #fffef0; */
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
   border-radius: 2px;
@@ -355,7 +359,6 @@ body {
 
 .yokai-card img {
   width: 100%;
-  /* height: 100%; */
   z-index: 100;
 }
 
