@@ -1,16 +1,14 @@
 import { useState } from "react";
-import "../src/styles/App.css";
-import Header from "./components/Header";
-import Filters from "./components/Filters";
-import YokaiCardsContainer from "./components/YokaiCardsContainer";
+import Header from "./Header";
+import Filters from "./Filters";
+import YokaiCardsContainer from "./YokaiCardsContainer";
 
-function App() {
+function FilterPage() {
   // Vamos a hacer que App gestione los estados de la aplicación (ver comentario en Filters.js)
 
   const [type, setType] = useState("todos");
   const [appearence, setAppearence] = useState("todos");
   const [habitat, setHabitat] = useState("todos");
-
   return (
     <div className="App">
       {/* <div className="app-wrapper"> */}
@@ -35,4 +33,4 @@ function App() {
   );
 }
 
-export default App;
+export default FilterPage;
