@@ -1,7 +1,11 @@
+import { Link } from "react-router-dom";
+
 function Header({ type, appearence, habitat }) {
   return (
     <div className="header">
-      <h1 className="kanji">妖怪の世界</h1>
+      <Link to="/">
+        <h1 className="kanji">妖怪の世界</h1>
+      </Link>
       <div>{defineHeader({ type, appearence, habitat })}</div>
     </div>
   );
