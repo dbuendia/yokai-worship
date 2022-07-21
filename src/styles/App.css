@@ -353,7 +353,7 @@ body {
   color: black;
 }
 
-.kanji {
+.yokai-card .kanji, .header .kanji {
   font-size: 50px; /* 3.2 em */
   font-family: "Yuji Boku";
 }
@@ -371,6 +371,11 @@ body {
   height: 300px;
   object-fit: fill;
   z-index: 100;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px 3px;
+}
+
+.yokai-card div {
+  font-size: 1.1rem;
 }
 
 .yokai-card-description-container {

@@ -75,7 +75,7 @@ export default function Filters({
       >
         <option value="todos">Todos</option>
         <option value="acuático">Acuático</option>
-        <option value="montaña">Montaña</option>
+        <option value="montañoso">Montañoso</option>
         <option value="urbano">Urbano</option>
       </select>
     </div>
