@@ -22,7 +22,7 @@ body {
   --torn-shadow-offset-x: -2px;
   --torn-shadow-offset-y: 2px;
   --torn-shadow-background-color: rgba(158, 127, 127, 0.25);
-  --torn-background-color: rgba(188, 0, 45, 0.80);
+  --torn-background-color: rgba(188, 0, 45, 0.8);
   --torn-left-width: 11px;
   --torn-right-width: 11px;
   --torn-left-clip-path: polygon(
@@ -204,7 +204,6 @@ body {
   filter: blur(var(--torn-shadow-blur));
 }
 
-
 .torn_container > div:nth-child(2),
 .torn_left > div:nth-child(2):before,
 .torn_right > div:nth-child(2):after {
@@ -269,8 +268,8 @@ body {
 .App {
   display: flex;
   flex-direction: column;
-  height:100vh;
-  font-family: 'Nothing You Could Do';
+  /* height: 100vh; */
+  font-family: "Nothing You Could Do";
   text-align: center;
   background-color: #ede4cc;
   background-image: url("../../public/img/paper.png");
@@ -279,8 +278,8 @@ body {
 .header {
   background-color: rgba(61, 147, 232, 0.279);
   background-color: rgba(61, 147, 232, 0.665);
-  background-color: rgba(188, 0, 45, 0.80);
-  background-color: rgba(188, 0, 45, 0.80);
+  background-color: rgba(188, 0, 45, 0.8);
+  background-color: rgba(188, 0, 45, 0.8);
   box-shadow: 0px 0px 1px #8a4d0f;
   background-image: url("../../public/img/paper.png");
   width: 100%;
@@ -298,11 +297,11 @@ body {
 
 .filters {
   background-color: rgba(147, 61, 232, 0.279);
-  background-color: rgba(188, 0, 45, 0.80);
-  background-color: rgba(218,165,32, 0.80);
-  background-color: rgba(207,181,59, 0.8);
+  background-color: rgba(188, 0, 45, 0.8);
+  background-color: rgba(218, 165, 32, 0.8);
+  background-color: rgba(207, 181, 59, 0.8);
   background-color: rgba(104, 195, 163, 0.6);
-  border: 1px solid rgba(218,165,32, 0.20);
+  border: 1px solid rgba(218, 165, 32, 0.2);
   box-shadow: 0px 0px 1px #8a4d0f;
   background-image: url("../../public/img/paper.png");
   width: 100%;
@@ -388,4 +387,58 @@ body {
   overflow-y: scroll;
   z-index: 300;
   position: absolute;
+}
+
+.voting-booth {
+  width: 400px;
+  border: 1px solid;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.vote {
+  padding: 40px;
+}
+
+.vote label {
+  margin: 10px;
+}
+
+.vote form input[type="submit"] {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.flex {
+  display: flex;
+}
+
+.no-wrap {
+  flex-wrap: nowrap;
+}
+
+input[type="radio"]:checked + label {
+  font-weight: bold;
+  outline: 2px solid deeppink;
+}
+
+.label-yokai {
+  /* margin: 10px; */
+
+  /* border: 5px solid orangered; */
+}
+
+.worship {
+}
+
+.rating-btn {
+  width: 100%;
+  background-color: #8a4d0f;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+}
+
+.rating-btn input[type="submit"] {
+  margin-bottom: 50px;
 }
