@@ -37,47 +37,77 @@ export default function Filters({
   return (
     <div className="filters">
       <h1>Filtros</h1>
-      <span>Tipo:</span>
-      <select
-        name="tipos"
-        id="1"
-        onChange={handleTypeSelectChange}
-        // Value es el valor seleccionado en el select, controlado por React
-        // Este valor lo cambiaremos a través de las funciones handle.
-        value={type}
-      >
-        <option value="todos">Todos</option>
-        <option value="yokai">Yokai</option>
-        <option value="henge yokai">Henge Yokai</option>
-        <option value="tsukumogami">Tsukumogami</option>
-        <option value="yurei">Yurei</option>
-      </select>
-      <span>Apariencia:</span>
-      <select
-        name="apariencias"
-        id="2"
-        onChange={handleAppearenceSelectChange}
-        value={appearence}
-      >
-        <option value="todos">Todos</option>
-        <option value="humana">Humana</option>
-        <option value="animal">Animal</option>
-        <option value="planta">Planta</option>
-        <option value="monstruo">Monstruo</option>
-        <option value="objeto">Objeto</option>
-      </select>
-      <span>Habitat:</span>
-      <select
-        name="habitats"
-        id="3"
-        onChange={handleHabitatSelectChange}
-        value={habitat}
-      >
-        <option value="todos">Todos</option>
-        <option value="acuático">Acuático</option>
-        <option value="montañoso">Montañoso</option>
-        <option value="urbano">Urbano</option>
-      </select>
+      <div className="filters-select">
+        <span>Tipo:</span>
+        <select
+          name="tipos"
+          id="1"
+          onChange={handleTypeSelectChange}
+          // Value es el valor seleccionado en el select, controlado por React
+          // Este valor lo cambiaremos a través de las funciones handle.
+          value={type}
+        >
+          <option value="todos">Todos</option>
+          <option value="yokai">Yokai</option>
+          <option value="henge yokai">Henge Yokai</option>
+          <option value="tsukumogami">Tsukumogami</option>
+          <option value="yurei">Yurei</option>
+        </select>
+        <span>Apariencia:</span>
+        <select
+          name="apariencias"
+          id="2"
+          onChange={handleAppearenceSelectChange}
+          value={appearence}
+        >
+          <option value="todos">Todos</option>
+          <option value="humana">Humana</option>
+          <option value="animal">Animal</option>
+          <option value="planta">Planta</option>
+          <option value="monstruo">Monstruo</option>
+          <option value="objeto">Objeto</option>
+        </select>
+        <span>Habitat:</span>
+        <select
+          name="habitats"
+          id="3"
+          onChange={handleHabitatSelectChange}
+          value={habitat}
+        >
+          <option value="todos">Todos</option>
+          <option value="acuático">Acuático</option>
+          <option value="montañoso">Montañoso</option>
+          <option value="urbano">Urbano</option>
+        </select>
+      </div>
+      <div>{filterPhrase({ type, appearence, habitat })}</div>
     </div>
   );
+}
+
+function filterPhrase({ type, appearence, habitat }) {
+  if (type === "todos" && appearence === "todos" && habitat === "todos") {
+    return <p className="filter-phrase">Mostrando todos los Yokai</p>;
+  }
+
+  let headerPhrase = "Mostrando ";
+
+  if (type === "todos") {
+    headerPhrase = headerPhrase + "todos los tipos de Yokai.";
+  } else {
+    headerPhrase = headerPhrase + type;
+  }
+
+  if (appearence === "todos") {
+    headerPhrase = headerPhrase + " con todas las apariencias";
+  } else {
+    headerPhrase = headerPhrase + " de apariencia: " + appearence;
+  }
+
+  if (habitat === "todos") {
+    headerPhrase = headerPhrase + " y todos los habitats.";
+  } else {
+    headerPhrase = headerPhrase + " y habitat " + habitat + ".";
+  }
+  return <p className="filter-phrase">{headerPhrase}</p>;
 }

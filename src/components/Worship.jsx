@@ -33,7 +33,7 @@ export default function Worship() {
   const [selectedYokai, setSelectedYokai] = useState();
   const [yokaiList, setYokaiList] = useState(yokaiData);
 
-  const handleInputChange = e => {
+  const handleInputChange = (e) => {
     setSelectedYokai({
       id: e.target.value,
       vote: votingStep,
@@ -41,7 +41,7 @@ export default function Worship() {
     });
   };
 
-  const printYokai = yokai => {
+  const printYokai = (yokai) => {
     return (
       <label key={yokai.id} className="label-yokai">
         <img width="80%" src={yokai.img} alt="yokai1" />
@@ -53,17 +53,16 @@ export default function Worship() {
             value={yokai.id}
             data-name={yokai.romajiName}
           />
-          {yokai.japaneseName}
           {yokai.romajiName}
         </div>
       </label>
     );
   };
 
-  const nextVote = e => {
+  const nextVote = (e) => {
     e.preventDefault();
     // vote.yokai.push(selectedYokai);
-    setVote(currentState => {
+    setVote((currentState) => {
       return {
         ...currentState,
         yokaiVotes: [...currentState.yokaiVotes, selectedYokai],
@@ -72,11 +71,11 @@ export default function Worship() {
 
     // console.log("vote :>> ", vote);
     const newYokaiList = yokaiList.filter(
-      yokai => yokai.id !== selectedYokai.id
+      (yokai) => yokai.id !== selectedYokai.id
     );
     setYokaiList(newYokaiList);
     // console.log("newVotingList :>> ", newVotingList);
-    setVotingStep(currentState => currentState + 2);
+    setVotingStep((currentState) => currentState + 2);
     setSelectedYokai(null);
   };
 
@@ -98,27 +97,26 @@ export default function Worship() {
       <div>
         <Link to="/">Home</Link>
       </div>
-      <div className="voting-booth">
+      <div className="voting-booth yokai-cards-container">
         {votingStep > 7 ? (
           <div>gracias por votar!</div>
         ) : (
           <>
-            <h3>Voting booth</h3>
-            <p>
-              ¿A quien le darias {votingStep} punt
+            <p className="vote-question">
+              ¿A quien le darías {votingStep} punt
               {`${votingStep > 1 ? "os?" : "o?"}`}
             </p>
             <div className="vote">
               <form onSubmit={nextVote}>
                 <fieldset className=" no-wrap">
-                  {yokaiList.map(yokai => printYokai(yokai))}
+                  {yokaiList.map((yokai) => printYokai(yokai))}
                 </fieldset>
                 <div className="rating-btn">
                   <input
                     disabled={!selectedYokai}
                     type="submit"
                     value={`${
-                      votingStep === 7 ? "submit my ratings" : "next vote"
+                      votingStep === 7 ? "submit my ratings" : "Next vote"
                     }`}
                   />
                 </div>

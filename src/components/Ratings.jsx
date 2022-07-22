@@ -10,9 +10,9 @@ export default function Ratings() {
   const [ranking, setRanking] = useState();
 
   useEffect(() => {
-    const desuscribir = firestore.collection("votes").onSnapshot(snapshot => {
-      const votes = snapshot.docs.map(doc => {
-        return doc.data().yokaiVotes.map(vote => {
+    const desuscribir = firestore.collection("votes").onSnapshot((snapshot) => {
+      const votes = snapshot.docs.map((doc) => {
+        return doc.data().yokaiVotes.map((vote) => {
           return {
             id: vote.id,
             vote: vote.vote,
@@ -21,7 +21,6 @@ export default function Ratings() {
         });
       });
       let flatArray = [].concat.apply([], votes);
-      console.log("flatArray :>> ", flatArray);
       let frequencyCounter = {};
       for (let val of flatArray) {
         // console.log("frequencyCounter[val.id] :>> ", frequencyCounter[val.id]);
@@ -30,8 +29,6 @@ export default function Ratings() {
           name: val.name,
         };
       }
-
-      console.log("frequencyCounter :>> ", frequencyCounter);
 
       let sortable = [];
       for (var value in frequencyCounter) {
@@ -42,13 +39,9 @@ export default function Ratings() {
         return b[1].vote - a[1].vote;
       });
 
-      console.log("sortable :>> ", sortable);
-
-      const sortableWithImage = sortable.map(sortedYokai => {
-        console.log("algo :>> ", algo);
-
+      const sortableWithImage = sortable.map((sortedYokai) => {
         const imgIndex = yokaiData.findIndex(
-          yokai => yokai.id === sortedYokai[0]
+          (yokai) => yokai.id === sortedYokai[0]
         );
         return {
           ...sortedYokai,
@@ -63,39 +56,27 @@ export default function Ratings() {
   }, []);
   return (
     <div>
-      <h1>Ratings</h1>
       <div>
-        <Link to="/filters">Filters</Link>
-      </div>
-      <div>
-        <Link to="/worship">Worship</Link>
-      </div>
-      <div>
-        <Link to="/">Home</Link>
+        <Link to="/">
+          <h1>Ratings</h1>
+        </Link>
       </div>
       <div className="ratings">
         {ranking && ranking.length > 0 && (
-          <>
-            <div>
-              <p>en primer lugar:</p>
-              name: {ranking[0][1].name}
-              puntos: {ranking[0][1].vote}
-              {console.log(ranking)}
-              <img width="20%" src={ranking[0].img} alt="yokai" />
-            </div>
-            <div>
-              <p>en segundo lugar:</p>
-              name: {ranking[1][1].name}
-              puntos: {ranking[1][1].vote}
-              <img width="20%" src={ranking[1].img} alt="yokai" />
-            </div>
-            <div>
-              <p>en tercer lugar:</p>
-              name: {ranking[2][1].name}
-              puntos: {ranking[2][1].vote}
-              <img width="20%" src={ranking[2].img} alt="yokai" />
-            </div>
-          </>
+          <div className="yokai-cards-container">
+            {ranking.map((yokai, index) => {
+              return (
+                <div className={`yokai-cards-rating place-{index}`}>
+                  <h1>Puesto {index + 1}</h1>
+                  <div className="yokai-name">{yokai["1"].name}</div>{" "}
+                  <div className="yokai-voting">
+                    {yokai["1"].vote} <span className="torii">⛩️</span>
+                  </div>{" "}
+                  <img src={yokai.img} alt="yokai" />
+                </div>
+              );
+            })}
+          </div>
         )}
       </div>
     </div>

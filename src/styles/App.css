@@ -268,7 +268,6 @@ body {
 .App {
   display: flex;
   flex-direction: column;
-  /* height: 100vh; */
   font-family: "Nothing You Could Do";
   text-align: center;
   background-color: #ede4cc;
@@ -276,19 +275,18 @@ body {
 }
 
 .header {
-  background-color: rgba(61, 147, 232, 0.279);
-  background-color: rgba(61, 147, 232, 0.665);
-  background-color: rgba(188, 0, 45, 0.8);
   background-color: rgba(188, 0, 45, 0.8);
   box-shadow: 0px 0px 1px #8a4d0f;
   background-image: url("../../public/img/paper.png");
   width: 100%;
-  height: 140px;
+  height: 250px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
+
 
 .header-phrase {
   margin-top: 5px;
@@ -296,30 +294,42 @@ body {
 }
 
 .filters {
-  background-color: rgba(147, 61, 232, 0.279);
-  background-color: rgba(188, 0, 45, 0.8);
-  background-color: rgba(218, 165, 32, 0.8);
-  background-color: rgba(207, 181, 59, 0.8);
+  /* display: flex; */
+  /* flex-direction: column; */
+  height: auto;
   background-color: rgba(104, 195, 163, 0.6);
   border: 1px solid rgba(218, 165, 32, 0.2);
   box-shadow: 0px 0px 1px #8a4d0f;
   background-image: url("../../public/img/paper.png");
   width: 100%;
-  height: 80px;
-  padding: 10px;
+  padding: 20px;
 }
 
 .filters p {
-  margin: 10px;
+  margin-top: 20px;
+  font-size: 1.5rem;
 }
 
 .filters span {
-  margin: 0 15px;
+  margin: 5px;
+  font-size: 1.5rem;
 }
 
 .filters h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
+
+.filters select {
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  padding: 15px;
+  margin: 35px;
+}
+/*
+.filters option {
+  font-family: "Yuji Boku";
+} */
 
 .yokai-cards-container {
   height: 100%;
@@ -338,13 +348,43 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   width: 400px;
   height: 900px;
   margin: 30px;
   padding: 50px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-
   border-radius: 2px;
+}
+
+.yokai-cards-rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  height: 500px;
+  margin: 30px;
+  padding: 50px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 2px;
+}
+
+/* First place */
+.yokai-cards-rating.place-0 { 
+  background: #CFB53B;
+  background-image: url("../../public/img/paper.png");
+  width: 23%;
+}
+.yokai-cards-rating.place-1 {
+  background: #C4CACE;
+  background-image: url("../../public/img/paper.png");
+  width: 23%;
+}
+.yokai-cards-rating.place-2 {
+  background: #DCA570;
+  background-image: url("../../public/img/paper.png");
+  width: 23%;
 }
 
 .header a {
@@ -352,13 +392,22 @@ body {
   color: black;
 }
 
-.yokai-card .kanji, .header .kanji {
+.yokai-card .kanji {
   font-size: 50px; /* 3.2 em */
   font-family: "Yuji Boku";
 }
 
-.kanji:hover {
+.header .kanji {
+  font-size: 4.4rem; /* 3.2 em */
+  font-family: "Yuji Boku";
+}
+
+/* .kanji:hover {
   color: rgba(104, 195, 163, 0.6);
+} */
+
+.kanji {
+  width:100%;
 }
 
 .romaji {
@@ -386,12 +435,12 @@ body {
   height: 200px;
   overflow-y: scroll;
   z-index: 300;
-  position: absolute;
+  position: relative;
+  /* position: absolute; Esto era necesario para poder hacer scroll. */
 }
 
 .voting-booth {
   width: 400px;
-  border: 1px solid;
   margin: 0 auto;
   margin-top: 40px;
 }
@@ -400,8 +449,30 @@ body {
   padding: 40px;
 }
 
+form {
+  background: rgba(158, 127, 127, 0.25);
+}
+
 .vote label {
   margin: 10px;
+}
+
+.vote-question {
+  top: 0;
+  bottom: 0;
+  padding: 15px;
+  margin: 50px;
+  background-color: #8a4d0f;
+  position: sticky;
+  font-size: 35px;
+  font-weight: bold;
+  background-color: rgba(188, 0, 45, 1);
+  background-image: url("../../public/img/paper.png");
+  color: white;
+}
+
+.vote form input[type="radio"] {
+  margin: 20px 10px 20px 0;
 }
 
 .vote form input[type="submit"] {
@@ -428,17 +499,47 @@ input[type="radio"]:checked + label {
   /* border: 5px solid orangered; */
 }
 
-.worship {
+.ratings .yokai-cards-container  {
+  height: 100vh;
+}
+
+.yokai-name, .yokai-voting {
+  font-size: 30px;
+}
+
+.ratings img {
+  width: 100%;
+  height: 300px;
+  object-fit: fill;
+  z-index: 100;
+  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px 3px;
 }
 
 .rating-btn {
   width: 100%;
-  background-color: #8a4d0f;
+  background-color: rgba(188, 0, 45, 1);
+  background-image: url("../../public/img/paper.png");
+  color: white;
   position: sticky;
   bottom: 0;
   left: 0;
 }
 
 .rating-btn input[type="submit"] {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  font-family: "Nothing You Could Do";
+  font-size: 23px;
+  padding: 15px;
 }
+
+@media (max-width: 320px) {
+  .header .kanji {
+    font-size: 60px;
+  }
+}
+
+/* @media (max-width: 320px) {
+  .header .kanji {
+    font-size: 60px;
+  }
+} */
