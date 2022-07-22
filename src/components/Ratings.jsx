@@ -3,6 +3,9 @@ import { firestore } from "../firebase";
 
 import { Link } from "react-router-dom";
 
+import yokaiData from "../dataset/yokaiData";
+let algo = 3;
+
 export default function Ratings() {
   const [ranking, setRanking] = useState();
 
@@ -39,8 +42,21 @@ export default function Ratings() {
         return b[1].vote - a[1].vote;
       });
 
-      // console.log("sortable :>> ", sortable);
-      setRanking(sortable);
+      console.log("sortable :>> ", sortable);
+
+      const sortableWithImage = sortable.map(sortedYokai => {
+        console.log("algo :>> ", algo);
+
+        const imgIndex = yokaiData.findIndex(
+          yokai => yokai.id === sortedYokai[0]
+        );
+        return {
+          ...sortedYokai,
+          img: yokaiData[imgIndex].img,
+        };
+      });
+      console.log("sortableWithImage :>> ", sortableWithImage);
+      setRanking(sortableWithImage);
     });
 
     return () => desuscribir();
@@ -64,16 +80,20 @@ export default function Ratings() {
               <p>en primer lugar:</p>
               name: {ranking[0][1].name}
               puntos: {ranking[0][1].vote}
+              {console.log(ranking)}
+              <img width="20%" src={ranking[0].img} alt="yokai" />
             </div>
             <div>
-              <p>en primer lugar:</p>
+              <p>en segundo lugar:</p>
               name: {ranking[1][1].name}
               puntos: {ranking[1][1].vote}
+              <img width="20%" src={ranking[1].img} alt="yokai" />
             </div>
             <div>
-              <p>en primer lugar:</p>
+              <p>en tercer lugar:</p>
               name: {ranking[2][1].name}
               puntos: {ranking[2][1].vote}
+              <img width="20%" src={ranking[2].img} alt="yokai" />
             </div>
           </>
         )}

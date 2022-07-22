@@ -44,7 +44,7 @@ export default function Worship() {
   const printYokai = yokai => {
     return (
       <label key={yokai.id} className="label-yokai">
-        <img width="80%" src={yokai1} alt="yokai1" />
+        <img width="80%" src={yokai.img} alt="yokai1" />
         <div>
           <input
             onChange={handleInputChange}
@@ -81,9 +81,7 @@ export default function Worship() {
   };
 
   useEffect(() => {
-    debugger;
     if (vote.yokaiVotes.length === 4) {
-      debugger;
       firestore.collection("votes").add(vote);
     }
   }, [vote]);

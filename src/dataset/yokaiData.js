@@ -1,6 +1,6 @@
 let yokaiData = [
   {
-    id: 1,
+    id: "1",
     japaneseName: "小豆洗い",
     romajiName: "Azukiarai",
     img: "../img/azukiarai.png",
@@ -12,7 +12,7 @@ let yokaiData = [
   },
 
   {
-    id: 2,
+    id: "2",
     japaneseName: "がしゃ髑髏",
     romajiName: "Gashadokuro",
     img: "../img/gashadokuro.jpg",
@@ -24,7 +24,7 @@ let yokaiData = [
   },
 
   {
-    id: 3,
+    id: "3",
     japaneseName: "網切",
     romajiName: "Amikiri",
     img: "../img/amikiri.jpg",
@@ -36,7 +36,7 @@ let yokaiData = [
   },
 
   {
-    id: 4,
+    id: "4",
     japaneseName: "垢嘗",
     romajiName: "Akaname",
     img: "../img/akaname.jpg",
@@ -48,7 +48,7 @@ let yokaiData = [
   },
 
   {
-    id: 5,
+    id: "5",
     japaneseName: "ろくろ首",
     romajiName: "Rokurokubi",
     img: "../img/rokurokubi.png",
@@ -60,7 +60,7 @@ let yokaiData = [
   },
 
   {
-    id: 6,
+    id: "6",
     japaneseName: "傘",
     romajiName: "Karakasa",
     img: "../img/karakasa.jpg",
@@ -72,7 +72,7 @@ let yokaiData = [
   },
 
   {
-    id: 7,
+    id: "7",
     japaneseName: "提灯お化け",
     romajiName: "Chochin",
     img: "../img/chochin.jpg",
@@ -84,7 +84,7 @@ let yokaiData = [
   },
 
   {
-    id: 8,
+    id: "8",
     japaneseName: "鬼",
     romajiName: "Oni",
     img: "../img/oni.png",
@@ -96,7 +96,7 @@ let yokaiData = [
   },
 
   {
-    id: 9,
+    id: "9",
     japaneseName: "産女",
     romajiName: "Ubume",
     img: "../img/ubume.jpg",
@@ -108,7 +108,7 @@ let yokaiData = [
   },
 
   {
-    id: 10,
+    id: "10",
     japaneseName: "化け猫",
     romajiName: "Bakeneko",
     img: "../img/bakeneko.jpg",
@@ -120,7 +120,7 @@ let yokaiData = [
   },
 
   {
-    id: 11,
+    id: "11",
     japaneseName: "人面樹",
     romajiName: "Jinmenju",
     img: "../img/jinmenju.webp",
@@ -132,7 +132,7 @@ let yokaiData = [
   },
 
   {
-    id: 12,
+    id: "12",
     japaneseName: "枕返し",
     romajiName: "Makuragaeshi",
     img: "../img/makuragaeshi.png",
@@ -144,7 +144,7 @@ let yokaiData = [
   },
 
   {
-    id: 13,
+    id: "13",
     japaneseName: "化け狸",
     romajiName: "Bakedanuki",
     img: "../img/tanuki.jpg",
@@ -156,7 +156,7 @@ let yokaiData = [
   },
 
   {
-    id: 14,
+    id: "14",
     japaneseName: "ぬっぺっぽう",
     romajiName: "Nuppeppo",
     img: "../img/nuppeppo.jpg",
@@ -168,7 +168,7 @@ let yokaiData = [
   },
 
   {
-    id: 15,
+    id: "15",
     japaneseName: "山姥",
     romajiName: "Yamauba",
     img: "../img/yamauba.jpg",
@@ -180,7 +180,7 @@ let yokaiData = [
   },
 
   {
-    id: 16,
+    id: "16",
     japaneseName: "二口女",
     romajiName: "Futakuchionna",
     img: "../img/futakuchionna.jpg",
@@ -192,7 +192,7 @@ let yokaiData = [
   },
 
   {
-    id: 17,
+    id: "17",
     japaneseName: "狐",
     romajiName: "Kitsune",
     img: "../img/kitsune.png",
@@ -204,7 +204,7 @@ let yokaiData = [
   },
 
   {
-    id: 18,
+    id: "18",
     japaneseName: "髪切り",
     romajiName: "Kamikiri",
     img: "../img/kamikiri.jpg",
@@ -216,7 +216,7 @@ let yokaiData = [
   },
 
   {
-    id: 19,
+    id: "19",
     japaneseName: "滑瓢",
     romajiName: "Nurarihyon",
     img: "../img/nurarihyon.jpg",
@@ -228,7 +228,7 @@ let yokaiData = [
   },
 
   {
-    id: 20,
+    id: "20",
     japaneseName: "河童",
     romajiName: "Kappa",
     img: "../img/kappa.png",
