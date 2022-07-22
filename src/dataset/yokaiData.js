@@ -1,6 +1,6 @@
 let yokaiData = [
   {
-    id: 0,
+    id: "0",
     japaneseName: "河童",
     romajiName: "Kappa",
     img: "img/lighter.webp",
@@ -13,7 +13,7 @@ let yokaiData = [
   },
 
   {
-    id: 0,
+    id: "1",
     japaneseName: "ろくろ首",
     romajiName: "Rokurokubi",
     img: "https://i.pinimg.com/1200x/eb/e6/41/ebe641606b2a57c3a7673a5b48d64c82.jpg",
@@ -26,7 +26,7 @@ let yokaiData = [
   },
 
   {
-    id: 0,
+    id: "2",
     japaneseName: "がしゃ髑髏",
     romajiName: "Gashadokuro",
     img: "img/yokai.jpeg" /*"https://i.pinimg.com/1200x/eb/e6/41/ebe641606b2a57c3a7673a5b48d64c82.jpg",*/,
@@ -39,9 +39,9 @@ let yokaiData = [
   },
 
   {
-    id: 0,
+    id: "3",
     japaneseName: "小豆洗",
-    romajiName: "Kappa",
+    romajiName: "Kappa 14",
     img: "img/azukiarai.jpeg",
     type: "妖怪 / Yokai",
     alignment: "Variable",
@@ -52,9 +52,9 @@ let yokaiData = [
   },
 
   {
-    id: 0,
+    id: "4",
     japaneseName: "河童",
-    romajiName: "Kappa",
+    romajiName: "Kappa 0",
     img: "img/yokai.jpeg" /*"https://i.pinimg.com/1200x/eb/e6/41/ebe641606b2a57c3a7673a5b48d64c82.jpg",*/,
     type: "妖怪 / Yokai",
     alignment: "Variable",
@@ -65,9 +65,9 @@ let yokaiData = [
   },
 
   {
-    id: 0,
+    id: "5",
     japaneseName: "河童",
-    romajiName: "Kappa",
+    romajiName: "Kappa 1",
     img: "img/yokai.jpeg" /*"https://i.pinimg.com/1200x/eb/e6/41/ebe641606b2a57c3a7673a5b48d64c82.jpg",*/,
     type: "妖怪 / Yokai",
     alignment: "Variable",
@@ -78,9 +78,9 @@ let yokaiData = [
   },
 
   {
-    id: 0,
+    id: "6",
     japaneseName: "河童",
-    romajiName: "Kappa",
+    romajiName: "Kappa 2",
     img: "img/yokai.jpeg" /*"https://i.pinimg.com/1200x/eb/e6/41/ebe641606b2a57c3a7673a5b48d64c82.jpg",*/,
     type: "Yokai",
     alignment: "Variable",
