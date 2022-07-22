@@ -49,7 +49,7 @@ export default function Filters({
         <option value="todos">Todos</option>
         <option value="yokai">Yokai</option>
         <option value="henge yokai">Henge Yokai</option>
-        <option value="tsukumono">Tsukumono</option>
+        <option value="tsukumogami">Tsukumogami</option>
         <option value="yurei">Yurei</option>
       </select>
       <span>Apariencia:</span>
@@ -63,6 +63,7 @@ export default function Filters({
         <option value="humana">Humana</option>
         <option value="animal">Animal</option>
         <option value="planta">Planta</option>
+        <option value="monstruo">Monstruo</option>
         <option value="objeto">Objeto</option>
       </select>
       <span>Habitat:</span>
@@ -73,10 +74,9 @@ export default function Filters({
         value={habitat}
       >
         <option value="todos">Todos</option>
-        <option value="río">Río</option>
-        <option value="montaña">Montaña</option>
-        <option value="mar">Mar</option>
-        <option value="casa">Casa</option>
+        <option value="acuático">Acuático</option>
+        <option value="montañoso">Montañoso</option>
+        <option value="urbano">Urbano</option>
       </select>
     </div>
   );
