@@ -1,31 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { firestore } from "../firebase";
-import yokai1 from "./img/oni.jpeg";
-import yokai2 from "./img/oninokannebutsu.jpeg";
 import yokaiData from "../dataset/yokaiData";
-
-// const document = {
-//   quien: "javier",
-//   yokai: [
-//     {
-//       id: 3,
-//       vote: 1,
-//     },
-//     {
-//       id: 13,
-//       vote: 3,
-//     },
-//     {
-//       id: 4,
-//       vote: 5,
-//     },
-//     {
-//       id: 8,
-//       vote: 7,
-//     },
-//   ],
-// };
 
 export default function Worship() {
   const [votingStep, setVotingStep] = useState(1);
@@ -61,7 +37,6 @@ export default function Worship() {
 
   const nextVote = (e) => {
     e.preventDefault();
-    // vote.yokai.push(selectedYokai);
     setVote((currentState) => {
       return {
         ...currentState,
@@ -69,12 +44,10 @@ export default function Worship() {
       };
     });
 
-    // console.log("vote :>> ", vote);
     const newYokaiList = yokaiList.filter(
       (yokai) => yokai.id !== selectedYokai.id
     );
     setYokaiList(newYokaiList);
-    // console.log("newVotingList :>> ", newVotingList);
     setVotingStep((currentState) => currentState + 2);
     setSelectedYokai(null);
   };
@@ -91,13 +64,7 @@ export default function Worship() {
       <div>
         <Link to="/filters">Filters</Link>
       </div>
-      <div>
-        <Link to="/ratings">Ratings</Link>
-      </div>
-      <div>
-        <Link to="/">Home</Link>
-      </div>
-      <div className="voting-booth yokai-cards-container">
+      <div className="voting-booth yokai-worship-cards-container">
         {votingStep > 7 ? (
           <div>gracias por votar!</div>
         ) : (

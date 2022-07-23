@@ -66,7 +66,7 @@ export default function Ratings() {
           <div className="yokai-cards-container">
             {ranking.map((yokai, index) => {
               return (
-                <div className={`yokai-cards-rating place-{index}`}>
+                <div className={`yokai-cards-rating place-${index}`}>
                   <h1>Puesto {index + 1}</h1>
                   <div className="yokai-name">{yokai["1"].name}</div>{" "}
                   <div className="yokai-voting">
