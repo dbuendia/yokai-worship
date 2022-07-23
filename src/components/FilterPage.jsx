@@ -2,6 +2,7 @@ import { useState } from "react";
 import Header from "./Header";
 import Filters from "./Filters";
 import YokaiCardsContainer from "./YokaiCardsContainer";
+import Links from "./Links";
 
 function FilterPage() {
   // Vamos a hacer que App gestione los estados de la aplicación (ver comentario en Filters.js)
@@ -14,6 +15,7 @@ function FilterPage() {
       {/* <div className="app-wrapper"> */}
       <Header type={type} appearence={appearence} habitat={habitat} />
       {/* Pasamos los estados y funciones que los gestionan como props */}
+      <Links></Links>
       <Filters
         type={type}
         appearence={appearence}

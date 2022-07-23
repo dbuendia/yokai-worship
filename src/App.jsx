@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
+        dani
         <Route exact path="/" element={<Home />} />
         <Route path="filters" element={<FilterPage />} />
         <Route path="ratings" element={<Ratings />} />

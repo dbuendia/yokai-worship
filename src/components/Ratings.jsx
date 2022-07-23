@@ -4,7 +4,7 @@ import { firestore } from "../firebase";
 import { Link } from "react-router-dom";
 
 import yokaiData from "../dataset/yokaiData";
-let algo = 3;
+import Links from "./Links";
 
 export default function Ratings() {
   const [ranking, setRanking] = useState();
@@ -56,14 +56,16 @@ export default function Ratings() {
   }, []);
   return (
     <div>
-      <div>
+      <Links></Links>
+      {/* <div>
         <Link to="/">
           <h1>Ratings</h1>
         </Link>
-      </div>
+      </div> */}
       <div className="ratings">
         {ranking && ranking.length > 0 && (
           <div className="yokai-cards-container">
+            <div></div>
             {ranking.map((yokai, index) => {
               return (
                 <div className={`yokai-cards-rating place-${index}`}>

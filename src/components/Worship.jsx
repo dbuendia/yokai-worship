@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { firestore } from "../firebase";
 import yokaiData from "../dataset/yokaiData";
+import Links from "./Links";
 
 export default function Worship() {
   const [votingStep, setVotingStep] = useState(1);
@@ -20,7 +20,7 @@ export default function Worship() {
   const printYokai = (yokai) => {
     return (
       <label key={yokai.id} className="label-yokai">
-        <img width="80%" src={yokai.img} alt="yokai1" />
+        <img src={yokai.img} alt="yokai1" />
         <div>
           <input
             onChange={handleInputChange}
@@ -31,6 +31,7 @@ export default function Worship() {
           />
           {yokai.romajiName}
         </div>
+        <hr class="solid"></hr>
       </label>
     );
   };
@@ -59,19 +60,16 @@ export default function Worship() {
   }, [vote]);
 
   return (
-    <div>
-      <h1>Worship</h1>
-      <div>
-        <Link to="/filters">Filters</Link>
-      </div>
+    <>
+      <Links></Links>
       <div className="voting-booth yokai-worship-cards-container">
         {votingStep > 7 ? (
-          <div>gracias por votar!</div>
+          <div>¡Gracias por votar!</div>
         ) : (
           <>
             <p className="vote-question">
-              ¿A quien le darías {votingStep} punt
-              {`${votingStep > 1 ? "os?" : "o?"}`}
+              ¿A quien le darías {votingStep} ⛩️?
+              {/* {`${votingStep > 1 ? "os?" : "o?"}`} */}
             </p>
             <div className="vote">
               <form onSubmit={nextVote}>
@@ -83,7 +81,7 @@ export default function Worship() {
                     disabled={!selectedYokai}
                     type="submit"
                     value={`${
-                      votingStep === 7 ? "submit my ratings" : "Next vote"
+                      votingStep === 7 ? "submit my ratings" : "Siguiente"
                     }`}
                   />
                 </div>
@@ -92,6 +90,6 @@ export default function Worship() {
           </>
         )}
       </div>
-    </div>
+    </>
   );
 }
