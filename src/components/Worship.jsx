@@ -64,7 +64,9 @@ export default function Worship() {
       <Links></Links>
       <div className="voting-booth yokai-worship-cards-container">
         {votingStep > 7 ? (
-          <div>¡Gracias por votar!</div>
+          <div class="thanks">
+            <div>¡Gracias por votar!</div>
+          </div>
         ) : (
           <>
             <p className="vote-question">
@@ -81,7 +83,9 @@ export default function Worship() {
                     disabled={!selectedYokai}
                     type="submit"
                     value={`${
-                      votingStep === 7 ? "submit my ratings" : "Siguiente"
+                      votingStep === 7
+                        ? "Circle, submit my ratings"
+                        : "Siguiente"
                     }`}
                   />
                 </div>

@@ -398,11 +398,11 @@ body {
 
 .yokai-worship-cards-container {
   height: 100%;
-  display: flex;
+  /* display: flex; */
   flex-wrap: wrap;
   flex: 1;
   justify-content: space-around;
-  box-shadow: 0 -5px 60px #8a4d0f inset;
+  /* box-shadow: 0 -5px 60px #8a4d0f inset; */
   background-image: url("../../public/img/paper.png");
   padding: 30px;
   background-color: #ede4cc;
@@ -485,9 +485,8 @@ fieldset {
 }
 
 .voting-booth {
-  width: 400px;
+  max-width: 400px;
   margin: 0 auto;
-  margin-top: 10px;
 }
 
 .vote img {
@@ -518,6 +517,13 @@ form {
 .vote form input[type="submit"] {
   margin-top: 20px;
   padding: 10px;
+}
+
+.thanks {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .flex {

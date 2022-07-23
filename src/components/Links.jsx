@@ -9,10 +9,10 @@ function Links() {
       <Link to="/worship">
         <h2 className="worship-link">WORSHIP</h2>
       </Link>
-
+      {/* 
       <Link className="disabled" to="/ratings">
         <h2 className="ratings-link">RATINGS</h2>
-      </Link>
+      </Link> */}
     </div>
   );
 }
