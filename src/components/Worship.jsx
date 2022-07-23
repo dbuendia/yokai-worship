@@ -70,7 +70,7 @@ export default function Worship() {
         ) : (
           <>
             <p className="vote-question">
-              ¿A quien le darías {votingStep} ⛩️?
+              ¿A quién otorgas {votingStep} ⛩️?
               {/* {`${votingStep > 1 ? "os?" : "o?"}`} */}
             </p>
             <div className="vote">

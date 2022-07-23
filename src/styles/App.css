@@ -272,6 +272,7 @@ body {
   text-align: center;
   background-color: #ede4cc;
   background-image: url("../../public/img/paper.png");
+  /* box-shadow: 0px -0px 60px rgba(138,77,15, 0.8) inset; */
   width: auto;
 }
 
@@ -305,11 +306,12 @@ body {
 }
 
 .links-header {
-  height: auto;
-  background-color: rgba(218, 165, 32, 0.1);
+  box-shadow: 0px 0px 0px #8a4d0f inset;
+  /* height: auto; */
+  /* background-color: rgba(218, 165, 32, 0.1); */
   /* border: 1px solid rgba(218, 165, 32, 0.2); */
   /* box-shadow: 0px 0px 1px #8a4d0f; */
-  background-image: url("../../public/img/paper.png");
+  /* background-image: url("../../public/img/paper.png"); */
   /* width: 100%; */
   /* padding: 20px; */
 }
@@ -362,7 +364,7 @@ body {
   flex: 1;
   overflow-y: auto;
   justify-content: space-around;
-  box-shadow: 0 -5px 60px #8a4d0f inset;
+  box-shadow: 0px -0px 60px rgba(138,77,15, 0.8) inset;
   background-image: url("../../public/img/paper.png");
   padding: 30px;
   background-color: #ede4cc;
@@ -398,28 +400,36 @@ body {
 
 .yokai-worship-cards-container {
   height: 100%;
-  /* display: flex; */
   flex-wrap: wrap;
   flex: 1;
   justify-content: space-around;
-  /* box-shadow: 0 -5px 60px #8a4d0f inset; */
   background-image: url("../../public/img/paper.png");
+  box-shadow: 0 0px 20px -10px #8a4d0f inset;
   padding: 30px;
   background-color: #ede4cc;
 }
 
+.yokai-cards-rating {
+  border-style: outset;
+}
 /* First place */
 .yokai-cards-rating.place-0 { 
+  border: 20px dotted #CFB53B;
+  border-style: outset;
   background: #CFB53B;
   background-image: url("../../public/img/paper.png");
   width: 23%;
 }
 .yokai-cards-rating.place-1 {
+  border: 15px dotted #C4CACE;
+  border-style: outset;
   background: #C4CACE;
   background-image: url("../../public/img/paper.png");
   width: 23%;
 }
 .yokai-cards-rating.place-2 {
+  border: 8px dotted #DCA570;
+  border-style: outset;
   background: #DCA570;
   background-image: url("../../public/img/paper.png");
   width: 23%;
@@ -454,6 +464,8 @@ body {
   object-fit: fill;
   z-index: 100;
   box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px 3px;
+  border: 1px solid rgba(158, 127, 127, 0.25);
+  border-style: outset;
 }
 
 fieldset {
@@ -492,6 +504,8 @@ fieldset {
 .vote img {
   margin-top: 30px;
   z-index: 400;
+  border: 1px solid rgba(158, 127, 127, 0.25);
+  border-style: outset;
 }
 
 form {
@@ -541,6 +555,8 @@ input[type="radio"]:checked + label {
 
 .ratings .yokai-cards-container  {
   height: 100vh;
+  box-shadow: none;
+
 }
 
 .yokai-name, .yokai-voting {
@@ -553,6 +569,8 @@ input[type="radio"]:checked + label {
   object-fit: fill;
   z-index: 100;
   box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px 3px;
+  border: 1px solid rgba(158, 127, 127, 0.25);
+  border-style: outset;
 }
 
 .rating-btn {
