@@ -6,7 +6,6 @@ import Worship from "./components/Worship";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
-  console.log("Test");
   return (
     <div className="App">
       <Routes>
