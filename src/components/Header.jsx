@@ -1,9 +1,7 @@
-function Header({ type, appearence, habitat }) {
+function Header() {
   return (
     <div className="header">
-      {/* <Link to="/"> */}
       <h1 className="kanji">妖怪けぐあい!</h1>
-      {/* </Link> */}
     </div>
   );
 }

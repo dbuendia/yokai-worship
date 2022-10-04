@@ -1,3 +1,4 @@
+import { useState } from "react";
 /*
 
 Idealmente deberíamos ser capaz de filtrar el array de elementos en este componente,
@@ -10,7 +11,7 @@ todos aquellos componentes que los vayan a necesitar.
 
 */
 
-// Recogemos las props con destructuring desde App.js
+// Recogemos las props con destructuring enviadas desde App.js
 export default function Filters({
   type,
   appearence,
@@ -19,6 +20,9 @@ export default function Filters({
   setAppearence,
   setHabitat,
 }) {
+  // Visibilidad de los filtros:
+  const [visible, setVisible] = useState(true);
+
   function handleTypeSelectChange(e) {
     // Así selecciono el texto del HTML:
     // setType(e.target[e.target.selectedIndex].innerText);
@@ -36,51 +40,60 @@ export default function Filters({
 
   return (
     <div className="filters">
-      <h1>FILTROS:</h1>
-      <div className="filters-select">
-        <span>Tipo:</span>
-        <select
-          name="tipos"
-          id="1"
-          onChange={handleTypeSelectChange}
-          // Value es el valor seleccionado en el select, controlado por React
-          // Este valor lo cambiaremos a través de las funciones handle.
-          value={type}
-        >
-          <option value="todos">Todos</option>
-          <option value="yokai">Yokai</option>
-          <option value="henge yokai">Henge Yokai</option>
-          <option value="tsukumogami">Tsukumogami</option>
-          <option value="yurei">Yurei</option>
-        </select>
-        <span>Apariencia:</span>
-        <select
-          name="apariencias"
-          id="2"
-          onChange={handleAppearenceSelectChange}
-          value={appearence}
-        >
-          <option value="todos">Todos</option>
-          <option value="humana">Humana</option>
-          <option value="animal">Animal</option>
-          <option value="planta">Planta</option>
-          <option value="monstruo">Monstruo</option>
-          <option value="objeto">Objeto</option>
-        </select>
-        <span>Habitat:</span>
-        <select
-          name="habitats"
-          id="3"
-          onChange={handleHabitatSelectChange}
-          value={habitat}
-        >
-          <option value="todos">Todos</option>
-          <option value="acuático">Acuático</option>
-          <option value="montañoso">Montañoso</option>
-          <option value="urbano">Urbano</option>
-        </select>
+      <h1
+        onClick={(e) => {
+          e.preventDefault();
+          setVisible(!visible);
+        }}
+      >
+        FILTROS:
+      </h1>
+      <div className={`${visible === true ? "collapsed" : ""}`}>
+        <div className="filters-select">
+          <span>Tipo:</span>
+          <select
+            name="tipos"
+            id="1"
+            onChange={handleTypeSelectChange}
+            // Value es el valor seleccionado en el select, controlado por React
+            // Este valor lo cambiaremos a través de las funciones handle.
+            value={type}
+          >
+            <option value="todos">Todos</option>
+            <option value="yokai">Yokai</option>
+            <option value="henge yokai">Henge Yokai</option>
+            <option value="tsukumogami">Tsukumogami</option>
+            <option value="yurei">Yurei</option>
+          </select>
+          <span>Apariencia:</span>
+          <select
+            name="apariencias"
+            id="2"
+            onChange={handleAppearenceSelectChange}
+            value={appearence}
+          >
+            <option value="todos">Todos</option>
+            <option value="humana">Humana</option>
+            <option value="animal">Animal</option>
+            <option value="planta">Planta</option>
+            <option value="monstruo">Monstruo</option>
+            <option value="objeto">Objeto</option>
+          </select>
+          <span>Habitat:</span>
+          <select
+            name="habitats"
+            id="3"
+            onChange={handleHabitatSelectChange}
+            value={habitat}
+          >
+            <option value="todos">Todos</option>
+            <option value="acuático">Acuático</option>
+            <option value="montañoso">Montañoso</option>
+            <option value="urbano">Urbano</option>
+          </select>
+        </div>
+        <div>{filterPhrase({ type, appearence, habitat })}</div>
       </div>
-      <div>{filterPhrase({ type, appearence, habitat })}</div>
     </div>
   );
 }

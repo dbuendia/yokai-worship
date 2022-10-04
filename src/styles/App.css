@@ -297,23 +297,21 @@ body {
 
 .filters {
   height: auto;
-  background-color: rgba(104, 195, 163, 0.6);
-  border: 1px solid rgba(218, 165, 32, 0.2);
-  box-shadow: 0px 0px 1px #8a4d0f;
+  background-color: rgba(120, 195, 163, 0.9);
   background-image: url("../../public/img/paper.png");
+  border: 1px solid rgba(218, 165, 32, 0.2);
   width: 100%;
-  padding: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.collapsed {
+  display: none;
 }
 
 .links-header {
-  box-shadow: 0px 0px 0px #8a4d0f inset;
-  /* height: auto; */
-  /* background-color: rgba(218, 165, 32, 0.1); */
-  /* border: 1px solid rgba(218, 165, 32, 0.2); */
-  /* box-shadow: 0px 0px 1px #8a4d0f; */
-  /* background-image: url("../../public/img/paper.png"); */
-  /* width: 100%; */
-  /* padding: 20px; */
+  background-color: rgba(104, 195, 163, 0.6);
+  background-image: url("../../public/img/paper.png");
 }
 
 .links-header a {
@@ -341,7 +339,7 @@ body {
 }
 
 .filters h1 {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .filters select {
@@ -412,27 +410,28 @@ body {
 .yokai-cards-rating {
   border-style: outset;
 }
+
 /* First place */
-.yokai-cards-rating.place-0 { 
+.yokai-cards-rating.place-0 {
   border: 20px dotted #CFB53B;
   border-style: outset;
   background: #CFB53B;
   background-image: url("../../public/img/paper.png");
-  width: 23%;
+  min-width: 23%;
 }
 .yokai-cards-rating.place-1 {
   border: 15px dotted #C4CACE;
   border-style: outset;
   background: #C4CACE;
   background-image: url("../../public/img/paper.png");
-  width: 23%;
+  min-width: 23%;
 }
 .yokai-cards-rating.place-2 {
   border: 8px dotted #DCA570;
   border-style: outset;
   background: #DCA570;
   background-image: url("../../public/img/paper.png");
-  width: 23%;
+  min-width: 23%;
 }
 
 .header a {
@@ -590,6 +589,17 @@ input[type="radio"]:checked + label {
   padding: 15px;
 }
 
+@media (max-width: 768px) {
+
+.yokai-cards-rating {
+  padding: 20px;
+}
+
+.yokai-cards-rating.place-0, .yokai-cards-rating.place-1, .yokai-cards-rating.place-2  {
+  width: 50%;
+}
+
+}
 @media (max-width: 683px) {
   .filters-select span {
     display: block;
@@ -599,6 +609,12 @@ input[type="radio"]:checked + label {
 @media (max-width: 464px) {
   .header .kanji {
     font-size: 50px;
+  }
+}
+
+@media (max-width: 428px) {
+  .yokai-cards-rating.place-0, .yokai-cards-rating.place-1, .yokai-cards-rating.place-2  {
+    width: 100%;
   }
 }
 

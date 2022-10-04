@@ -1,8 +1,5 @@
 import { useEffect, useState } from "react";
 import { firestore } from "../firebase";
-
-import { Link } from "react-router-dom";
-
 import yokaiData from "../dataset/yokaiData";
 import Links from "./Links";
 
@@ -23,7 +20,6 @@ export default function Ratings() {
       let flatArray = [].concat.apply([], votes);
       let frequencyCounter = {};
       for (let val of flatArray) {
-        // console.log("frequencyCounter[val.id] :>> ", frequencyCounter[val.id]);
         frequencyCounter[val.id] = {
           vote: (frequencyCounter[val.id]?.vote || 0) + val.vote,
           name: val.name,
@@ -48,7 +44,6 @@ export default function Ratings() {
           img: yokaiData[imgIndex].img,
         };
       });
-      console.log("sortableWithImage :>> ", sortableWithImage);
       setRanking(sortableWithImage);
     });
 
@@ -57,23 +52,17 @@ export default function Ratings() {
   return (
     <div>
       <Links></Links>
-      {/* <div>
-        <Link to="/">
-          <h1>Ratings</h1>
-        </Link>
-      </div> */}
       <div className="ratings">
         {ranking && ranking.length > 0 && (
           <div className="yokai-cards-container">
-            <div></div>
             {ranking.map((yokai, index) => {
               return (
                 <div className={`yokai-cards-rating place-${index}`}>
                   <h1>Puesto {index + 1}</h1>
-                  <div className="yokai-name">{yokai["1"].name}</div>{" "}
+                  <div className="yokai-name">{yokai["1"].name}</div>
                   <div className="yokai-voting">
                     {yokai["1"].vote} <span className="torii">⛩️</span>
-                  </div>{" "}
+                  </div>
                   <img src={yokai.img} alt="yokai" />
                 </div>
               );
