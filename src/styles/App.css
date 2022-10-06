@@ -500,6 +500,19 @@ fieldset {
   margin: 0 auto;
 }
 
+@media (min-width: 428px) {
+  .voting-booth {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .vote form fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 .vote img {
   margin-top: 30px;
   z-index: 400;
