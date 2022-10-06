@@ -9,8 +9,8 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/yokai-worship/" element={<FilterPage />} />
-        <Route path="/yokai-worship/ratings" element={<Ratings />} />
-        <Route path="/yokai-worship/worship" element={<Worship />} />
+        <Route path="/yokai-worship/rating/" element={<Ratings />} />
+        <Route path="/yokai-worship/worship/" element={<Worship />} />
       </Routes>
     </div>
   );

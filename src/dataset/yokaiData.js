@@ -3,7 +3,7 @@ let yokaiData = [
     id: "1",
     japaneseName: "小豆洗い",
     romajiName: "Azukiarai",
-    img: "./img/azukiarai.png",
+    img: "../img/azukiarai.png",
     type: "Yokai",
     appearence: "Humana",
     habitat: "Acuático",
