@@ -1,16 +1,17 @@
 {
   "files": {
     "main.css": "/yokai-worship/static/css/main.dcdaf40f.css",
-    "main.js": "/yokai-worship/static/js/main.041995e1.js",
+    "main.js": "/yokai-worship/static/js/main.cfe637a9.js",
     "static/js/787.beaee168.chunk.js": "/yokai-worship/static/js/787.beaee168.chunk.js",
+    "static/media/azukiarai.png": "/yokai-worship/static/media/azukiarai.c0364b388f95211e2082.png",
     "static/media/paper.png": "/yokai-worship/static/media/paper.ffa6a31cdcf531560c56.png",
     "index.html": "/yokai-worship/index.html",
     "main.dcdaf40f.css.map": "/yokai-worship/static/css/main.dcdaf40f.css.map",
-    "main.041995e1.js.map": "/yokai-worship/static/js/main.041995e1.js.map",
+    "main.cfe637a9.js.map": "/yokai-worship/static/js/main.cfe637a9.js.map",
     "787.beaee168.chunk.js.map": "/yokai-worship/static/js/787.beaee168.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dcdaf40f.css",
-    "static/js/main.041995e1.js"
+    "static/js/main.cfe637a9.js"
   ]
 }
