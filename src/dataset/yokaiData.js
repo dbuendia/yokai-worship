@@ -1,9 +1,30 @@
+import azukiarai from "../img/azukiarai.png";
+import gashadokuro from "../img/gashadokuro.jpg";
+import amikiri from "../img/amikiri.jpg";
+import akaname from "../img/akaname.jpg";
+import rokurokubi from "../img/rokurokubi.png";
+import karakasa from "../img/karakasa.jpg";
+import chochin from "../img/chochin.jpg";
+import oni from "../img/oni.png";
+import ubume from "../img/ubume.jpg";
+import bakeneko from "../img/bakeneko.jpg";
+import jinmenju from "../img/jinmenju.webp";
+import makuragaeshi from "../img/makuragaeshi.png";
+import bakedanuki from "../img/tanuki.jpg";
+import nuppeppo from "../img/nuppeppo.jpg";
+import yamauba from "../img/yamauba.jpg";
+import futakuchionna from "../img/futakuchionna.jpg";
+import kitsune from "../img/kitsune.png";
+import kamikiri from "../img/kamikiri.jpg";
+import nurarihyon from "../img/nurarihyon.jpg";
+import kappa from "../img/kappa.png";
+
 let yokaiData = [
   {
     id: "1",
     japaneseName: "小豆洗い",
     romajiName: "Azukiarai",
-    img: "../img/azukiarai.png",
+    img: azukiarai,
     type: "Yokai",
     appearence: "Humana",
     habitat: "Acuático",
@@ -15,7 +36,7 @@ let yokaiData = [
     id: "2",
     japaneseName: "がしゃ髑髏",
     romajiName: "Gashadokuro",
-    img: "./img/gashadokuro.jpg",
+    img: gashadokuro,
     type: "Yokai",
     appearence: "Monstruo",
     habitat: "Urbano",
@@ -27,7 +48,7 @@ let yokaiData = [
     id: "3",
     japaneseName: "網切",
     romajiName: "Amikiri",
-    img: "./img/amikiri.jpg",
+    img: amikiri,
     type: "Yokai",
     appearence: "Animal",
     habitat: "Urbano",
@@ -39,7 +60,7 @@ let yokaiData = [
     id: "4",
     japaneseName: "垢嘗",
     romajiName: "Akaname",
-    img: "./img/akaname.jpg",
+    img: akaname,
     type: "Yokai",
     appearence: "Monstruo",
     habitat: "Urbano",
@@ -51,7 +72,7 @@ let yokaiData = [
     id: "5",
     japaneseName: "ろくろ首",
     romajiName: "Rokurokubi",
-    img: "./img/rokurokubi.png",
+    img: rokurokubi,
     type: "Yokai",
     appearence: "Humana",
     habitat: "Urbano",
@@ -63,7 +84,7 @@ let yokaiData = [
     id: "6",
     japaneseName: "傘",
     romajiName: "Karakasa",
-    img: "./img/karakasa.jpg",
+    img: karakasa,
     type: "Tsukumogami",
     appearence: "Objeto",
     habitat: "Urbano",
@@ -75,7 +96,7 @@ let yokaiData = [
     id: "7",
     japaneseName: "提灯お化け",
     romajiName: "Chochin",
-    img: "./img/chochin.jpg",
+    img: chochin,
     type: "Tsukumogami",
     appearence: "Objeto",
     habitat: "Urbano",
@@ -87,7 +108,7 @@ let yokaiData = [
     id: "8",
     japaneseName: "鬼",
     romajiName: "Oni",
-    img: "./img/oni.png",
+    img: oni,
     type: "Yokai",
     appearence: "Monstruo",
     habitat: "Montañoso",
@@ -99,7 +120,7 @@ let yokaiData = [
     id: "9",
     japaneseName: "産女",
     romajiName: "Ubume",
-    img: "./img/ubume.jpg",
+    img: ubume,
     type: "Yurei",
     appearence: "Humana",
     habitat: "Urbano",
@@ -111,7 +132,7 @@ let yokaiData = [
     id: "10",
     japaneseName: "化け猫",
     romajiName: "Bakeneko",
-    img: "./img/bakeneko.jpg",
+    img: bakeneko,
     type: "Henge Yokai",
     appearence: "Animal",
     habitat: "Urbano",
@@ -123,7 +144,7 @@ let yokaiData = [
     id: "11",
     japaneseName: "人面樹",
     romajiName: "Jinmenju",
-    img: "./img/jinmenju.webp",
+    img: jinmenju,
     type: "Yokai",
     appearence: "Planta",
     habitat: "Montañoso",
@@ -135,7 +156,7 @@ let yokaiData = [
     id: "12",
     japaneseName: "枕返し",
     romajiName: "Makuragaeshi",
-    img: "./img/makuragaeshi.png",
+    img: makuragaeshi,
     type: "Yokai",
     appearence: "Monstruo",
     habitat: "Urbano",
@@ -147,7 +168,7 @@ let yokaiData = [
     id: "13",
     japaneseName: "化け狸",
     romajiName: "Bakedanuki",
-    img: "./img/tanuki.jpg",
+    img: bakedanuki,
     type: "Henge Yokai",
     appearence: "Animal",
     habitat: "Montañoso",
@@ -159,7 +180,7 @@ let yokaiData = [
     id: "14",
     japaneseName: "ぬっぺっぽう",
     romajiName: "Nuppeppo",
-    img: "./img/nuppeppo.jpg",
+    img: nuppeppo,
     type: "Yokai",
     appearence: "Monstruo",
     habitat: "Urbano",
@@ -171,7 +192,7 @@ let yokaiData = [
     id: "15",
     japaneseName: "山姥",
     romajiName: "Yamauba",
-    img: "./img/yamauba.jpg",
+    img: yamauba,
     type: "Yokai",
     appearence: "Humana",
     habitat: "Montañoso",
@@ -183,7 +204,7 @@ let yokaiData = [
     id: "16",
     japaneseName: "二口女",
     romajiName: "Futakuchionna",
-    img: "./img/futakuchionna.jpg",
+    img: futakuchionna,
     type: "Yokai",
     appearence: "Humana",
     habitat: "Urbana",
@@ -195,7 +216,7 @@ let yokaiData = [
     id: "17",
     japaneseName: "狐",
     romajiName: "Kitsune",
-    img: "./img/kitsune.png",
+    img: kitsune,
     type: "Henge Yokai",
     appearence: "Animal",
     habitat: "Montañoso",
@@ -207,7 +228,7 @@ let yokaiData = [
     id: "18",
     japaneseName: "髪切り",
     romajiName: "Kamikiri",
-    img: "./img/kamikiri.jpg",
+    img: kamikiri,
     type: "Yokai",
     appearence: "Animal",
     habitat: "Urbano",
@@ -219,7 +240,7 @@ let yokaiData = [
     id: "19",
     japaneseName: "滑瓢",
     romajiName: "Nurarihyon",
-    img: "./img/nurarihyon.jpg",
+    img: nurarihyon,
     type: "Yokai",
     appearence: "Humana",
     habitat: "Urbano",
@@ -231,7 +252,7 @@ let yokaiData = [
     id: "20",
     japaneseName: "河童",
     romajiName: "Kappa",
-    img: "./img/kappa.png",
+    img: kappa,
     type: "Yokai",
     appearence: "Animal",
     habitat: "Acuático",

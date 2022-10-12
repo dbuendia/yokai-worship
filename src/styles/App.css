@@ -208,7 +208,7 @@ body {
 .torn_left > div:nth-child(2):before,
 .torn_right > div:nth-child(2):after {
   background-color: var(--torn-background-color);
-  background-image: url("../../public/img/paper.png");
+  background-image: url("../img/paper.png");
 }
 .torn_container > div:nth-child(2),
 .torn_container > div:nth-child(2) {
@@ -271,7 +271,7 @@ body {
   font-family: "Nothing You Could Do";
   text-align: center;
   background-color: #ede4cc;
-  background-image: url("../../public/img/paper.png");
+  background-image: url("../img/paper.png");
   /* box-shadow: 0px -0px 60px rgba(138,77,15, 0.8) inset; */
   width: auto;
 }
@@ -280,7 +280,7 @@ body {
 .header {
   background-color: rgba(188, 0, 45, 0.8);
   box-shadow: 0px 0px 1px #8a4d0f;
-  background-image: url("../../public/img/paper.png");
+  background-image: url("../img/paper.png");
   width: 100%;
   height: 200px;
   margin: 0 auto;
@@ -298,7 +298,7 @@ body {
 .filters {
   height: auto;
   background-color: rgba(120, 195, 163, 0.9);
-  background-image: url("../../public/img/paper.png");
+  background-image: url("../img/paper.png");
   border: 1px solid rgba(218, 165, 32, 0.2);
   width: 100%;
   padding: 10px;
@@ -311,7 +311,7 @@ body {
 
 .links-header {
   background-color: rgba(104, 195, 163, 0.6);
-  background-image: url("../../public/img/paper.png");
+  background-image: url("../img/paper.png");
 }
 
 .links-header a {
@@ -363,7 +363,7 @@ body {
   overflow-y: auto;
   justify-content: space-around;
   box-shadow: 0px -0px 60px rgba(138,77,15, 0.8) inset;
-  background-image: url("../../public/img/paper.png");
+  background-image: url("../img/paper.png");
   padding: 30px;
   background-color: #ede4cc;
 }
@@ -401,7 +401,7 @@ body {
   flex-wrap: wrap;
   flex: 1;
   justify-content: space-around;
-  background-image: url("../../public/img/paper.png");
+  background-image: url("../img/paper.png");
   box-shadow: 0 0px 20px -10px #8a4d0f inset;
   padding: 30px;
   background-color: #ede4cc;
@@ -416,21 +416,21 @@ body {
   border: 20px dotted #CFB53B;
   border-style: outset;
   background: #CFB53B;
-  background-image: url("../../public/img/paper.png");
+  background-image: url("../img/paper.png");
   min-width: 23%;
 }
 .yokai-cards-rating.place-1 {
   border: 15px dotted #C4CACE;
   border-style: outset;
   background: #C4CACE;
-  background-image: url("../../public/img/paper.png");
+  background-image: url("../img/paper.png");
   min-width: 23%;
 }
 .yokai-cards-rating.place-2 {
   border: 8px dotted #DCA570;
   border-style: outset;
   background: #DCA570;
-  background-image: url("../../public/img/paper.png");
+  background-image: url("../img/paper.png");
   min-width: 23%;
 }
 
@@ -532,7 +532,7 @@ form {
   font-size: 26px;
   font-weight: bold;
   background-color: rgba(188, 0, 45, 1);
-  background-image: url("../../public/img/paper.png");
+  background-image: url("../img/paper.png");
   color: white;
 }
 
@@ -588,7 +588,7 @@ input[type="radio"]:checked + label {
 .rating-btn {
   width: 100%;
   background-color: rgba(188, 0, 45, 1);
-  background-image: url("../../public/img/paper.png");
+  background-image: url("../img/paper.png");
   color: white;
   position: sticky;
   bottom: 0;

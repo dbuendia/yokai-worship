@@ -61,7 +61,7 @@ export default function Worship() {
 
   return (
     <>
-      <Links></Links>
+      <Links />
       <div className="voting-booth yokai-worship-cards-container">
         {votingStep > 7 ? (
           <div class="thanks">
