@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/yokai-worship/static/css/main.dcdaf40f.css",
+    "main.css": "/yokai-worship/static/css/main.416d6ef1.css",
     "main.js": "/yokai-worship/static/js/main.795a515b.js",
     "static/js/787.beaee168.chunk.js": "/yokai-worship/static/js/787.beaee168.chunk.js",
     "static/media/rokurokubi.png": "/yokai-worship/static/media/rokurokubi.ebf36a151ffe70eecaf4.png",
@@ -25,12 +25,12 @@
     "static/media/tanuki.jpg": "/yokai-worship/static/media/tanuki.1153b79e841a161ce257.jpg",
     "static/media/kamikiri.jpg": "/yokai-worship/static/media/kamikiri.fc827b165c7e58b84520.jpg",
     "index.html": "/yokai-worship/index.html",
-    "main.dcdaf40f.css.map": "/yokai-worship/static/css/main.dcdaf40f.css.map",
+    "main.416d6ef1.css.map": "/yokai-worship/static/css/main.416d6ef1.css.map",
     "main.795a515b.js.map": "/yokai-worship/static/js/main.795a515b.js.map",
     "787.beaee168.chunk.js.map": "/yokai-worship/static/js/787.beaee168.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dcdaf40f.css",
+    "static/css/main.416d6ef1.css",
     "static/js/main.795a515b.js"
   ]
 }
