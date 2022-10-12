@@ -1,17 +1,36 @@
 {
   "files": {
     "main.css": "/yokai-worship/static/css/main.dcdaf40f.css",
-    "main.js": "/yokai-worship/static/js/main.cfe637a9.js",
+    "main.js": "/yokai-worship/static/js/main.795a515b.js",
     "static/js/787.beaee168.chunk.js": "/yokai-worship/static/js/787.beaee168.chunk.js",
+    "static/media/rokurokubi.png": "/yokai-worship/static/media/rokurokubi.ebf36a151ffe70eecaf4.png",
+    "static/media/nuppeppo.jpg": "/yokai-worship/static/media/nuppeppo.72f8ca7536cac9d00565.jpg",
+    "static/media/makuragaeshi.png": "/yokai-worship/static/media/makuragaeshi.973d203ffcd93181561c.png",
+    "static/media/kitsune.png": "/yokai-worship/static/media/kitsune.ca6aabf07a5c91465c50.png",
+    "static/media/oni.png": "/yokai-worship/static/media/oni.ef9b56d75ee0163486e1.png",
+    "static/media/kappa.png": "/yokai-worship/static/media/kappa.ebf983b6c4902772d9f9.png",
+    "static/media/bakeneko.jpg": "/yokai-worship/static/media/bakeneko.c7fc743bf2a4d8e25117.jpg",
     "static/media/azukiarai.png": "/yokai-worship/static/media/azukiarai.c0364b388f95211e2082.png",
+    "static/media/amikiri.jpg": "/yokai-worship/static/media/amikiri.fe03ad6eadccc34af821.jpg",
+    "static/media/chochin.jpg": "/yokai-worship/static/media/chochin.6548ea99f6b6383ba900.jpg",
+    "static/media/karakasa.jpg": "/yokai-worship/static/media/karakasa.78d7516fedbbc9ab226b.jpg",
+    "static/media/yamauba.jpg": "/yokai-worship/static/media/yamauba.568fec45c17b5edb452c.jpg",
     "static/media/paper.png": "/yokai-worship/static/media/paper.ffa6a31cdcf531560c56.png",
+    "static/media/jinmenju.webp": "/yokai-worship/static/media/jinmenju.224c1aba18107646f929.webp",
+    "static/media/futakuchionna.jpg": "/yokai-worship/static/media/futakuchionna.eb28184e7e7e4af27cff.jpg",
+    "static/media/nurarihyon.jpg": "/yokai-worship/static/media/nurarihyon.f306938a51e4216b22ad.jpg",
+    "static/media/gashadokuro.jpg": "/yokai-worship/static/media/gashadokuro.7e9d1c040d02f61346e2.jpg",
+    "static/media/akaname.jpg": "/yokai-worship/static/media/akaname.925e354e3cd0c5e1458c.jpg",
+    "static/media/ubume.jpg": "/yokai-worship/static/media/ubume.9e707a1778cd564e4f68.jpg",
+    "static/media/tanuki.jpg": "/yokai-worship/static/media/tanuki.1153b79e841a161ce257.jpg",
+    "static/media/kamikiri.jpg": "/yokai-worship/static/media/kamikiri.fc827b165c7e58b84520.jpg",
     "index.html": "/yokai-worship/index.html",
     "main.dcdaf40f.css.map": "/yokai-worship/static/css/main.dcdaf40f.css.map",
-    "main.cfe637a9.js.map": "/yokai-worship/static/js/main.cfe637a9.js.map",
+    "main.795a515b.js.map": "/yokai-worship/static/js/main.795a515b.js.map",
     "787.beaee168.chunk.js.map": "/yokai-worship/static/js/787.beaee168.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dcdaf40f.css",
-    "static/js/main.cfe637a9.js"
+    "static/js/main.795a515b.js"
   ]
 }
