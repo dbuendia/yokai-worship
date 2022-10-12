@@ -268,7 +268,7 @@ body {
 .App {
   display: flex;
   flex-direction: column;
-  font-family: "Luminari";
+  font-family: "Nothing You Could Do";
   text-align: center;
   background-color: #ede4cc;
   background-image: url("../img/paper.png");
@@ -374,7 +374,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 400px;
-  height: 600px;
+  height: 900px;
   margin: 30px;
   padding: 50px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -440,13 +440,13 @@ body {
 }
 
 .yokai-card .kanji {
-  font-size: 31px;
-  font-family: "Luminari";
+  font-size: 50px;
+  font-family: "Yuji Boku";
 }
 
 .header .kanji {
   font-size: 4.4rem;
-  font-family: "Luminari";
+  font-family: "Yuji Boku";
 }
 
 .kanji {
@@ -460,7 +460,7 @@ body {
 .yokai-card img {
   width: 100%;
   height: 300px;
-  object-fit: cover;
+  object-fit: fill;
   z-index: 100;
   box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px 3px;
   border: 1px solid rgba(158, 127, 127, 0.25);
@@ -485,12 +485,12 @@ fieldset {
 }
 
 .yokai-card-description-container {
-  height: 100px;
+  height: 200px;
 }
 
 .yokai-card-description {
   width: 300px;
-  height: 100px;
+  height: 200px;
   overflow-y: scroll;
   z-index: 300;
   position: relative;
@@ -598,7 +598,7 @@ input[type="radio"]:checked + label {
 
 .rating-btn input[type="submit"] {
   margin-bottom: 20px;
-  font-family: "Luminari";
+  font-family: "Nothing You Could Do";
   font-size: 23px;
   padding: 15px;
 }
