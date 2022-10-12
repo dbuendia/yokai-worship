@@ -69,7 +69,9 @@ export default function Worship() {
           </div>
         ) : (
           <>
-            <p className="vote-question">¿A quién otorgas {votingStep} ⛩️?</p>
+            <p className="vote-question">
+              ¿A quién otorgas {votingStep} punto?
+            </p>
             <div className="vote">
               <form onSubmit={nextVote}>
                 <fieldset className=" no-wrap">
