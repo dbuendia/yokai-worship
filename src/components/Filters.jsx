@@ -92,18 +92,22 @@ export default function Filters({
             <option value="urbano">Urbano</option>
           </select>
         </div>
-        <div>{filterPhrase({ type, appearence, habitat })}</div>
+        <div>
+          <p className="filter-phrase">
+            {filterPhrase({ type, appearence, habitat })}
+          </p>
+        </div>
       </div>
     </div>
   );
 }
 
-function filterPhrase({ type, appearence, habitat }) {
-  if (type === "todos" && appearence === "todos" && habitat === "todos") {
-    return <p className="filter-phrase">Mostrando todos los Yokai</p>;
-  }
-
+export function filterPhrase({ type, appearence, habitat }) {
   let headerPhrase = "Mostrando ";
+  if (type === "todos" && appearence === "todos" && habitat === "todos") {
+    headerPhrase = headerPhrase + "todos los Yokai.";
+    return headerPhrase;
+  }
 
   if (type === "todos") {
     headerPhrase = headerPhrase + "todos los tipos de Yokai.";
@@ -122,5 +126,5 @@ function filterPhrase({ type, appearence, habitat }) {
   } else {
     headerPhrase = headerPhrase + " y habitat " + habitat + ".";
   }
-  return <p className="filter-phrase">{headerPhrase}</p>;
+  return headerPhrase;
 }
