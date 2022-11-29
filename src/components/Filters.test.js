@@ -1,35 +1,28 @@
 import { render, screen } from "@testing-library/react";
 import Filters, { filterPhrase } from "./Filters.jsx";
+import yokaiData from "../dataset/yokaiData";
 
 describe("Filters Phrase Tests", () => {
-  test("Component should render a filter phrase on the screen", () => {
-    const result = filterPhrase({
-      type: "todos",
-      habitat: "todos",
-      appearence: "todos",
-    });
-
-    expect(result).toBeInTheDocument;
-  });
-
   test("Phrase should be correct for the value: todos, todos, todos", () => {
+    const expected = "Mostrando todos los Yokai.";
     const result = filterPhrase({
       type: "todos",
       habitat: "todos",
       appearence: "todos",
     });
-    expect(result).toBe("Mostrando todos los Yokai.");
+    expect(result).toBe(expected);
   });
 
   test("Phrase should be correct for different valid values: type, habitat, appearence", () => {
+    let yokaiToTest = yokaiData[0];
+    const expected =
+      "Mostrando Yokai de apariencia: Humana y habitat Acuático.";
     const result = filterPhrase({
-      type: "Yokai",
-      habitat: "Montañoso",
-      appearence: "Monstruo",
+      type: yokaiToTest.type,
+      habitat: yokaiToTest.habitat,
+      appearence: yokaiToTest.appearence,
     });
-    expect(result).toBe(
-      "Mostrando Yokai de apariencia: Monstruo y habitat Montañoso."
-    );
+    expect(result).toBe(expected);
   });
 
   test("Phrase should be correct for mix of all and specific values:", () => {
